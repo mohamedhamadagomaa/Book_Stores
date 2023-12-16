@@ -1,0 +1,306 @@
+:root {
+  --main-color: rgb(210 178 134 / 35%);
+}
+
+/* start global rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Work Sans", sans-serif;
+  background-color: var(--main-color);
+  perspective: 600px;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  /* padding-inline: 15px; */
+}
+.special-head{
+  padding-left: 10px;
+}
+.special-head h2 {
+  text-align: left;
+  color: #333;
+  font-size: 70px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  margin: 0;
+}
+
+.special-head p {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* end global rules */
+
+/* start header */
+
+.header .container {
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px;
+}
+.header .container .logo a,
+.links a {
+  text-decoration: none;
+  color: black;
+  margin-right: 10px;
+  font-size: 25px;
+  padding: 15px;
+}
+@media (max-width:  700px){
+  .header .container .logo a,
+  .links a{
+  padding: 10px;
+  margin-right: 5px;
+  font-size: 15px;
+  
+ 
+}
+
+}
+
+
+.header .container .logo a:hover,.links a:hover{
+  background-color: #871;
+  color: white;
+  
+  
+}
+
+.header .container a span {
+  font-weight: bolder;
+}
+
+/* End header */
+
+/* start main-img */
+.main-img {
+  text-align: center;
+  background-size: cover;
+  background-image: url(../images/img\ 1\ \ for\ cover.jpg);
+  height: 273px;
+
+  position: relative;
+}
+.main-img .main-text {
+  color: #fff6f6;
+  position: absolute;
+  left: 50%;
+  top: 75%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+/* End main-img */
+
+/* start cards */
+
+.services .container .cards {
+  padding: 10px;
+  /* justify-content: center; */
+  text-align: center;
+  margin: 5px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  overflow: hidden;
+  
+}
+
+
+.services .container .card {
+  /* width: 183px;
+  height: 275px; */
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 15px;
+  
+}
+@media (max-width:480px){
+
+  .services .container .card{
+    width: 90%;
+    padding-left: 20px;
+    
+  }
+  .services .container .card img{
+    width: 90%;
+  }
+
+}
+.services .container .card img:hover {
+  transform: translate(5px , 5px);
+
+}
+
+
+
+.services .container .card::before {
+  content: "Book Name";
+  position: absolute;
+  background-color: rgb(36, 33, 33);
+  color: antiquewhite;
+  top: 0px;
+  left: 15px;
+  padding: 5px;
+  z-index: 2;
+}
+
+/* end cards */
+/* start cards of about */
+
+.about .container .cards {
+  padding: 10px;
+  justify-content: center;
+  margin-top: 10px;
+  text-align: center;
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  
+}
+.about .container .card {
+
+  position: relative;
+  margin-bottom: 25px;
+}
+@media (max-width:480px){
+  .about .container .card{
+    width: 90%;
+    padding-left: 20px;
+    
+  }
+  .about .container .card img{
+    width: 90%;
+  }
+
+}
+
+.about .container h3{
+
+font-weight: 400;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+margin:0 0 10px 0;
+
+}
+.about .container .job-title{
+color: black;
+opacity: 0.60;
+margin: 5px 0;
+}
+.about .container .para{
+  margin-bottom: 18px;
+  color: black;
+  opacity: 0.8;
+}
+.about .container  a{
+  color: black;
+  border: 1px solid transparent;
+  background-color: #f1f1f1;
+  text-align: center;
+  width: 59%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 10px);
+  right: 1%;
+  bottom: 0;
+  text-decoration: none
+}
+
+
+/* End cards of about */
+
+/* start cards of contact */
+
+.contact .container .cards{
+  padding: 10px;
+  justify-content: center;
+  margin-top: 10px;
+  text-align: center;
+  margin-bottom: 10px;
+  
+  display: flex;
+  flex-basis: 30%;
+  flex-wrap: wrap;
+  flex-basis: auto;
+  
+  
+}
+.contact .container .card{
+  margin-bottom: 15px;
+  margin-inline: 20px;
+  
+  
+}
+@media (max-width:480px){
+  .contact .container .card{
+    width: 90%;
+    
+  }
+  .contact .container .card img{
+    width: 90%;
+  }
+
+}
+
+.contact .container h3{
+
+  font-weight: 400;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin:0 0 10px 0;
+  
+  }
+  .contact .container .job-title{
+  color: black;
+  opacity: 0.60;
+  margin: 5px 0;
+  }
+  .contact .container .para{
+    margin-bottom: 18px;
+    color: black;
+    opacity: 0.8;
+  }
+.contact .container .contact-btn{
+  color: black;
+    text-decoration: none;
+    background-color: #f1f1f1;
+    padding-inline: 60px;
+    padding-block: 7px
+  
+}
+  
+/* End cards of contact */
+/* start footer */
+.footer{
+  width: 100%;
+  text-align: center;
+  padding-block:50px ;
+  background-color: #7777;
+
+}
+/* end footer */
