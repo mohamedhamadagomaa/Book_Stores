@@ -301,6 +301,13 @@ margin: 5px 0;
   text-align: center;
   padding-block:50px ;
   background-color: #7777;
+  
 
+}
+.footer span{
+font-weight: bold;
+color: #009688;
+/* background-color: wheat; */
+padding-block:5px ;
 }
 /* end footer */
